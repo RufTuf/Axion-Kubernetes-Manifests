@@ -3,10 +3,17 @@ kind: Service
 metadata:
   name: axion-ui-service
   namespace: axion-dev
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+
 spec:
-  type: LoadBalancer
+  type: ClusterIP
+
   selector:
     app: axion-ui
+
   ports:
-    - port: 80
-      targetPort: 80
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP
