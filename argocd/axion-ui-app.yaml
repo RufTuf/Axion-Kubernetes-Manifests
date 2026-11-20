@@ -8,7 +8,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR_USERNAME/Axion-Kubernetes-Manifests.git
+    repoURL: https://github.com/RufTuf/Axion-Kubernetes-Manifests.git
     targetRevision: main
     path: axion-ui
 
