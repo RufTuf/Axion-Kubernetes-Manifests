@@ -1,22 +1,22 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: axion-ui-ingress
-  namespace: axion-dev
-  annotations:
-    argocd.argoproj.io/sync-wave: "2"
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: axion-ui-ingress
+#   namespace: axion-dev
+#   annotations:
+#     argocd.argoproj.io/sync-wave: "2"
 
-spec:
-  ingressClassName: nginx
+# spec:
+#   ingressClassName: nginx
 
-  rules:
-    - host: axion.example.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: axion-ui-service
-                port:
-                  name: http
+#   rules:
+#     - host: axion.example.com
+#       http:
+#         paths:
+#           - path: /
+#             pathType: Prefix
+#             backend:
+#               service:
+#                 name: axion-ui-service
+#                 port:
+#                   name: http
