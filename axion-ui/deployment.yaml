@@ -3,8 +3,6 @@ kind: Deployment
 metadata:
   name: axion-ui
   namespace: axion-dev
-  annotations:
-    argocd.argoproj.io/sync-wave: "0"
 
 spec:
   replicas: 2

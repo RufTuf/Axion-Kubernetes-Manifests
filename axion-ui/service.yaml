@@ -3,8 +3,6 @@ kind: Service
 metadata:
   name: axion-ui-service
   namespace: axion-dev
-  annotations:
-   argocd.argoproj.io/sync-wave: "1"
 spec:
   type: LoadBalancer
   selector:
