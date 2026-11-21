@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: axion-ui
-          image: axionacr1.azurecr.io/axionuigit:569
+          image: axionacr1.azurecr.io/axionuigit:590
           imagePullPolicy: Always
 
           ports:
