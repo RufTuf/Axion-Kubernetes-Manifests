@@ -1,0 +1,12 @@
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - deployment.yaml
+  - service.yaml
+
+images:
+  - name: axionacr1.azurecr.io/axionuigit
+    newName: axionacr1.azurecr.io/axionuigit
+    newTag: "608"
